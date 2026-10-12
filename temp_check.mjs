@@ -1,0 +1,1 @@
+export function wx(t){const s=Object.create(null),a=String(t);let r=0,n=!1,i=!1;

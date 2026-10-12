@@ -1,0 +1,3 @@
+﻿mysql3306=0 api3000=0 vite5173=0
+mysqldump=True deploy_ready=True sqlbundle=False
+migration=20260905150542_init

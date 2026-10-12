@@ -1,0 +1,48 @@
+﻿[sql] schema from migration: 20260905150542_init
+[sql] tables: 32
+[sql] dumping data from school_erp ...
+node : mysqldump: Got error: 2002: "Can't connect to MySQL server on 'localhost' (10061)" 
+when trying to connect
+At line:1 char:95
++ ... SOURCE_DB_USER='root'; node scripts/build-sql-bundle.mjs 2>&1 | Tee-O ...
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (mysqldump: Got ...ying to connect:String) [], 
+    RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+node:internal/errors:983
+  const err = new Error(message);
+              ^
+
+Error: Command failed: C:\xampp\mysql\bin\mysqldump -uroot --no-create-info --no-create-db 
+--default-character-set=utf8mb4 --complete-insert --single-transaction --skip-lock-tables 
+--skip-add-locks --skip-comments --skip-set-charset --skip-disable-keys school_erp
+mysqldump: Got error: 2002: "Can't connect to MySQL server on 'localhost' (10061)" when 
+trying to connect
+
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at checkExecSyncError (node:child_process:883:11)
+    at execFileSync (node:child_process:919:15)
+    at file:///C:/Users/lenovo/Downloads/BMTS-School-ERP-main/hostinger%20bmts%20erp/script
+s/build-sql-bundle.mjs:83:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:329:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  status: 2,
+  signal: null,
+  output: [
+    null,
+    '',
+    `mysqldump: Got error: 2002: "Can't connect to MySQL server on 'localhost' (10061)" 
+when trying to connect\r\n`
+  ],
+  pid: 22828,
+  stdout: '',
+  stderr: `mysqldump: Got error: 2002: "Can't connect to MySQL server on 'localhost' 
+(10061)" when trying to connect\r\n`
+}
+
+Node.js v22.17.1
+
